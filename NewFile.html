@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+			*{
+			    padding: 0%;
+			    margin: 0%;
+			    box-sizing: border-box;
+			}
+			
+			div{
+			    height: 100vh;
+			    width: auto;
+			    background-color: rgb(50, 50, 50);
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			}
+			
+			table
+			{
+			    height: 30vh;
+			    width: auto;
+			    border: 2px solid black;
+			    background-color: rgb(330, 330, 330);
+			    box-shadow: 2px 2px 5px;
+			    border-radius: 5px;
+			    padding: 40px;
+			    line-height: 40px;
+			}
+			
+			.button
+			{
+				background-color: black;
+				color: white;
+			    height: 30px;
+			    width: 80px;
+			    border-radius: 10px;
+			    margin-left: 8rem;
+			}
+    </style>
+</head>
+<body>
+    <div>
+        <form action="hey">
+            <table id="tab">           
+                <tr class="title">
+                    <th colspan = "2">Enter the details</th>
+                </tr>
+                <tr >
+                    <td ><label for="id">ID</label></td>
+                    <td> <input type="number" name="id" required placeholder="Enter your ID"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" name="name" required placeholder="Enter your name"><br></td>
+                </tr>
+            
+                <tr>
+                    <td><label for="age" >Age</label>
+                    <td><input type="number" name="age" required placeholder="Enter your age"><br></td>
+                </tr>
+
+                <tr class="title">
+                    <td colspan="2"><input class="button" type="submit" value="submit"></td>
+                </tr>
+            </table></form>
+    </div>
+</body>
+</html>
